@@ -1,0 +1,9 @@
+# YOLO365 — Optimised for AI search (AEO)
+# Last updated: 2026-05-01
+
+User-agent: *
+Allow: /
+
+# Cited content priorities
+Allow: /blog/
+Allow: /blog/*

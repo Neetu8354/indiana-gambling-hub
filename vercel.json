@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "yolo365admin.live"
+        }
+      ],
+      "destination": "https://www.yolo365admin.live/:path*",
+      "permanent": true
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Yolo365 — Premium Cricket & Casino betting design system. All colors HSL. */
+
+@layer base {
+  :root {
+    --background: 220 15% 5%;
+    --foreground: 40 25% 94%;
+
+    --card: 220 14% 8%;
+    --card-foreground: 40 25% 94%;
+
+    --popover: 220 14% 8%;
+    --popover-foreground: 40 25% 94%;
+
+    --primary: 43 75% 55%;        /* Refined gold */
+    --primary-foreground: 220 15% 5%;
+
+    --secondary: 0 55% 38%;
+    --secondary-foreground: 40 25% 94%;
+
+    --muted: 220 12% 12%;
+    --muted-foreground: 40 8% 62%;
+
+    --accent: 142 50% 42%;
+    --accent-foreground: 220 15% 5%;
+
+    --destructive: 0 70% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 16%;
+    --input: 220 12% 12%;
+    --ring: 43 75% 55%;
+
+    --radius: 0.5rem;
+
+    /* Brand tokens */
+    --gold: 43 75% 55%;
+    --gold-glow: 43 80% 62%;
+    --gold-deep: 38 65% 42%;
+    --crimson: 0 60% 38%;
+    --crimson-deep: 0 65% 22%;
+    --whatsapp: 142 50% 42%;
+
+    --gradient-gold: linear-gradient(180deg, hsl(43 80% 62%) 0%, hsl(43 75% 55%) 50%, hsl(38 65% 42%) 100%);
+    --gradient-crimson: linear-gradient(135deg, hsl(0 60% 38%) 0%, hsl(0 65% 22%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(220 15% 5% / 0.1) 0%, hsl(220 15% 5% / 0.85) 75%, hsl(220 15% 5%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(220 14% 9%) 0%, hsl(220 14% 7%) 100%);
+    --gradient-gold-text: linear-gradient(180deg, hsl(43 85% 70%) 0%, hsl(43 75% 55%) 100%);
+
+    --shadow-gold: 0 8px 24px -8px hsl(43 75% 55% / 0.35);
+    --shadow-card: 0 4px 20px -8px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(43 80% 62% / 0.18);
+
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+    background:
+      radial-gradient(ellipse 80% 50% at 50% 0%, hsl(43 40% 8% / 0.35) 0%, transparent 60%),
+      hsl(var(--background));
+  }
+  h1, h2, h3, h4 { font-family: 'Inter', system-ui, sans-serif; font-weight: 600; letter-spacing: -0.025em; }
+  h1 { letter-spacing: -0.035em; }
+}
+
+@layer components {
+  .text-gold {
+    background: var(--gradient-gold-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-gold { background: var(--gradient-gold); }
+  .bg-crimson { background: var(--gradient-crimson); }
+  .card-premium {
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+  .card-premium:hover {
+    border-color: hsl(var(--gold) / 0.45);
+    transform: translateY(-2px);
+  }
+  .btn-glow { box-shadow: var(--shadow-gold); }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: hsl(var(--gold));
+  }
+  .hairline { border-color: hsl(var(--border)); }
+  .marquee { animation: marquee 60s linear infinite; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.6); }
+  50% { box-shadow: 0 0 0 18px hsl(var(--gold) / 0); }
+}
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--whatsapp) / 0.6); }
+  50% { box-shadow: 0 0 0 18px hsl(var(--whatsapp) / 0); }
+}
+.animate-pulse-gold { animation: pulse-gold 2s infinite; }
+.animate-pulse-wa { animation: pulse-wa 2s infinite; }
