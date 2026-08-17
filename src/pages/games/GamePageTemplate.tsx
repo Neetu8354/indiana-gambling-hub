@@ -22,11 +22,12 @@ export type GamePageProps = {
   faqs: { q: string; a: string }[];
   relatedSlugs?: { slug: string; label: string }[];
   imageAlt: string;
+  gameImage: string;
 };
 
 const GamePageTemplate = ({
   slug, title, description, keywords, h1, intro,
-  highlights, howToPlay, strategyTitle, strategy, faqs, relatedSlugs = [], imageAlt,
+  highlights, howToPlay, strategyTitle, strategy, faqs, relatedSlugs = [], imageAlt, gameImage,
 }: GamePageProps) => {
   const url = `${SITE}/games/${slug}`;
   const ld = [
@@ -92,7 +93,7 @@ const GamePageTemplate = ({
             <Link to="/blog" className="inline-flex items-center px-6 h-12 rounded-md border hairline hover:border-gold/40 font-medium">Read tips</Link>
           </div>
           <img
-            src="/og-image.jpg"
+            src={typeof gameImage === 'string' ? gameImage : gameImage}
             alt={imageAlt}
             width={1200}
             height={630}

@@ -1,4 +1,5 @@
 import GamePageTemplate from "./GamePageTemplate";
+import aviatorImage from "@/assets/casino-slots.jpg";
 
 const Aviator = () => (
   <GamePageTemplate
@@ -9,6 +10,7 @@ const Aviator = () => (
     h1="Aviator Crash Game — Real Money Online"
     intro="Play the original Aviator crash game by Spribe on YOLO365 for real INR money. 97% RTP, ₹10 minimum bet, dual-bet auto cashout, provably fair — and the fastest growing crash game in India with thousands of players in every round."
     imageAlt="Aviator crash game online real money on yolo365admin.live with multiplier curve"
+    gameImage={aviatorImage}
     highlights={[
       { title: "97% RTP — provably fair", desc: "Highest-payout crash game in India with verifiable round results." },
       { title: "₹10 minimum bet", desc: "Start with as little as ₹10 — perfect for learning the rhythm." },
