@@ -1,18 +1,12 @@
-import cricket from "@/assets/sport-cricket.jpg";
-import tennis from "@/assets/sport-tennis.jpg";
-import kabaddi from "@/assets/sport-kabaddi.jpg";
-import horse from "@/assets/sport-horse.jpg";
-import esports from "@/assets/sport-esports.jpg";
-import basketball from "@/assets/sport-basketball.jpg";
 import { openWhatsApp } from "@/lib/wa";
 
 const sports = [
-  { img: cricket, name: "Cricket", alt: "Bet on live cricket — IPL 2026 and international matches on yolo365admin.live", tag: "IPL 2026 · International", live: 42 },
-  { img: kabaddi, name: "Kabaddi", alt: "Pro Kabaddi League online betting on yolo365admin.live", tag: "Pro Kabaddi League", live: 8 },
-  { img: tennis, name: "Tennis", alt: "Live tennis betting — ATP, WTA and Grand Slam odds on yolo365admin.live", tag: "ATP · WTA · Grand Slam", live: 15 },
-  { img: horse, name: "Horse Racing", alt: "Indian Derby horse racing online betting on yolo365admin.live", tag: "Indian Derby", live: 12 },
-  { img: esports, name: "Esports", alt: "Esports betting — BGMI, Valorant, CS2 live odds on yolo365admin.live", tag: "BGMI · Valorant · CS2", live: 24 },
-  { img: basketball, name: "Basketball", alt: "NBA and Indian basketball league online betting on yolo365admin.live", tag: "NBA · Indian League", live: 9 },
+  { img: "/sport-cricket.jpg", name: "Cricket", alt: "Bet on live cricket — IPL 2026 and international matches on yolo365admin.live", tag: "IPL 2026 · International", live: 42 },
+  { img: "/sport-kabaddi.jpg", name: "Kabaddi", alt: "Pro Kabaddi League online betting on yolo365admin.live", tag: "Pro Kabaddi League", live: 8 },
+  { img: "/sport-tennis.jpg", name: "Tennis", alt: "Live tennis betting — ATP, WTA and Grand Slam odds on yolo365admin.live", tag: "ATP · WTA · Grand Slam", live: 15 },
+  { img: "/sport-horse.jpg", name: "Horse Racing", alt: "Indian Derby horse racing online betting on yolo365admin.live", tag: "Indian Derby", live: 12 },
+  { img: "/sport-esports.jpg", name: "Esports", alt: "Esports betting — BGMI, Valorant, CS2 live odds on yolo365admin.live", tag: "BGMI · Valorant · CS2", live: 24 },
+  { img: "/sport-basketball.jpg", name: "Basketball", alt: "NBA and Indian basketball league online betting on yolo365admin.live", tag: "NBA · Indian League", live: 9 },
 ];
 
 const SportsSection = () => (

@@ -11,5 +11,11 @@
       "destination": "https://www.yolo365admin.live/:path*",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
   ]
 }

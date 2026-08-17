@@ -1,18 +1,12 @@
-import roulette from "@/assets/casino-roulette.jpg";
-import andarbahar from "@/assets/casino-andarbahar.jpg";
-import teenpatti from "@/assets/casino-teenpatti.jpg";
-import blackjack from "@/assets/casino-blackjack.jpg";
-import slots from "@/assets/casino-slots.jpg";
-import dragontiger from "@/assets/casino-dragontiger.jpg";
 import { openWhatsApp } from "@/lib/wa";
 
 const games = [
-  { img: teenpatti, name: "Teen Patti", alt: "Play Teen Patti online real money live on yolo365admin.live", tag: "Indian classic", min: "₹100" },
-  { img: andarbahar, name: "Andar Bahar", alt: "Andar Bahar online live casino with Indian dealers on yolo365admin.live", tag: "Live dealer", min: "₹50" },
-  { img: roulette, name: "Roulette", alt: "Live European roulette online real money on yolo365admin.live", tag: "European · Auto", min: "₹100" },
-  { img: dragontiger, name: "Dragon Tiger", alt: "Dragon Tiger live casino card game on yolo365admin.live", tag: "Quick cards", min: "₹50" },
-  { img: blackjack, name: "Blackjack", alt: "Live blackjack 21 online real money tables on yolo365admin.live", tag: "21 live tables", min: "₹200" },
-  { img: slots, name: "Lucky 777 Slots", alt: "1000+ online slots — Lucky 777 jackpot games on yolo365admin.live", tag: "1,000+ slots", min: "₹10" },
+  { img: "/casino-teenpatti.jpg", name: "Teen Patti", alt: "Play Teen Patti online real money live on yolo365admin.live", tag: "Indian classic", min: "₹100" },
+  { img: "/casino-andarbahar.jpg", name: "Andar Bahar", alt: "Andar Bahar online live casino with Indian dealers on yolo365admin.live", tag: "Live dealer", min: "₹50" },
+  { img: "/casino-roulette.jpg", name: "Roulette", alt: "Live European roulette online real money on yolo365admin.live", tag: "European · Auto", min: "₹100" },
+  { img: "/casino-dragontiger.jpg", name: "Dragon Tiger", alt: "Dragon Tiger live casino card game on yolo365admin.live", tag: "Quick cards", min: "₹50" },
+  { img: "/casino-blackjack.jpg", name: "Blackjack", alt: "Live blackjack 21 online real money tables on yolo365admin.live", tag: "21 live tables", min: "₹200" },
+  { img: "/casino-slots.jpg", name: "Lucky 777 Slots", alt: "1000+ online slots — Lucky 777 jackpot games on yolo365admin.live", tag: "1,000+ slots", min: "₹10" },
 ];
 
 const CasinoSection = () => (

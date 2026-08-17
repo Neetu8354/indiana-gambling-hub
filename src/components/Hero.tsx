@@ -1,4 +1,3 @@
-import heroImg from "@/assets/hero-cricket.jpg";
 import { openWhatsApp } from "@/lib/wa";
 import { MessageCircle, ArrowRight, ShieldCheck } from "lucide-react";
 
@@ -7,7 +6,7 @@ const Hero = () => {
     <section className="relative overflow-hidden border-b hairline">
       <div className="relative h-[70vh] min-h-[460px] max-h-[780px] sm:h-[75vh] md:h-[78vh]">
         <img
-          src={heroImg}
+          src="/hero-cricket.jpg"
           alt="Live online cricket betting on yolo365admin.live — IPL 2026, T20 and ODI matches"
           className="absolute inset-0 w-full h-full object-cover"
           width={1920}
