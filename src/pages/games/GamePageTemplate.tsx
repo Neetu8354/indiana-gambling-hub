@@ -22,7 +22,7 @@ export type GamePageProps = {
   faqs: { q: string; a: string }[];
   relatedSlugs?: { slug: string; label: string }[];
   imageAlt: string;
-  gameImage: string;
+  gameImage: string | any;
 };
 
 const GamePageTemplate = ({
