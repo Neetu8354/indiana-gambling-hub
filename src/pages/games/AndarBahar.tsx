@@ -1,5 +1,4 @@
 import GamePageTemplate from "./GamePageTemplate";
-import andarBaharImage from "@/assets/casino-andarbahar.jpg";
 
 const AndarBahar = () => (
   <GamePageTemplate
@@ -10,7 +9,7 @@ const AndarBahar = () => (
     h1="Andar Bahar Online Live — Real Money"
     intro="Play the classic Indian game Andar Bahar online for real money on YOLO365. Live dealers from Ezugi and Evolution stream 24×7, ₹100 minimum bet, side bets paying up to 120×, and instant UPI deposit + 5-minute withdrawal."
     imageAlt="Andar Bahar online real money game on yolo365admin.live with live Indian dealer"
-    gameImage={andarBaharImage}
+    gameImage="/casino-andarbahar.jpg"
     highlights={[
       { title: "Live Indian dealers", desc: "24×7 Hindi-speaking dealers from Ezugi & Evolution licensed studios." },
       { title: "Side bets up to 120×", desc: "First card, suit match, and total cards side bets boost your edge." },

@@ -22,7 +22,7 @@ export type GamePageProps = {
   faqs: { q: string; a: string }[];
   relatedSlugs?: { slug: string; label: string }[];
   imageAlt: string;
-  gameImage: string | any;
+  gameImage: string;
 };
 
 const GamePageTemplate = ({
@@ -93,7 +93,7 @@ const GamePageTemplate = ({
             <Link to="/blog" className="inline-flex items-center px-6 h-12 rounded-md border hairline hover:border-gold/40 font-medium">Read tips</Link>
           </div>
           <img
-            src={typeof gameImage === 'string' ? gameImage : gameImage}
+            src={gameImage}
             alt={imageAlt}
             width={1200}
             height={630}

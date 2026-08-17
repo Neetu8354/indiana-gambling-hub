@@ -1,5 +1,4 @@
 import GamePageTemplate from "./GamePageTemplate";
-import teenPattiImage from "@/assets/casino-teenpatti.jpg";
 
 const TeenPatti = () => (
   <GamePageTemplate
@@ -10,7 +9,7 @@ const TeenPatti = () => (
     h1="Teen Patti Online Live — Real Money"
     intro="Play Teen Patti online for real INR money on YOLO365 with live dealers streaming 24×7 from Evolution Gaming and Ezugi studios. Classic 3 Patti, Joker variant, AB side bets, ₹100 minimum stake — and instant UPI cashout in under 5 minutes."
     imageAlt="Live Teen Patti online real money game on yolo365admin.live with Indian dealer"
-    gameImage={teenPattiImage}
+    gameImage="/casino-teenpatti.jpg"
     highlights={[
       { title: "Live Indian dealers", desc: "24×7 streams from Evolution & Ezugi studios with Hindi-speaking dealers." },
       { title: "₹100 minimum bet", desc: "Start tiny, scale up to ₹2 lakh per hand on VIP tables." },

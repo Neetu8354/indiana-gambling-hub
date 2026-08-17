@@ -1,5 +1,4 @@
 import GamePageTemplate from "./GamePageTemplate";
-import cricketImage from "@/assets/sport-cricket.jpg";
 
 const Cricket = () => (
   <GamePageTemplate
@@ -10,7 +9,7 @@ const Cricket = () => (
     h1="Online Cricket Betting on YOLO365"
     intro="YOLO365 is India's #1 online cricket betting exchange. Bet live on IPL 2026, T20 World Cup, BBL, PSL, and every international series — with the sharpest odds, in-play markets every ball, and a verified cricket betting ID delivered on WhatsApp in 60 seconds."
     imageAlt="Online cricket betting on yolo365admin.live with IPL 2026 live odds"
-    gameImage={cricketImage}
+    gameImage="/sport-cricket.jpg"
     highlights={[
       { title: "Best IPL 2026 odds", desc: "Match-winner, top batsman, top bowler, over/under, and 50+ in-play markets every over." },
       { title: "Live in-play betting", desc: "Bet ball-by-ball with real-time odds across every major T20, ODI, and Test match." },
