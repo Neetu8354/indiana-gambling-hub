@@ -47,7 +47,7 @@ This guide walks you through the exact steps, what to expect, what NOT to do, an
 
 ## Step 1 — Open WhatsApp from yolo365admin.live
 
-On the [YOLO365 homepage](/), tap any of the gold "Get ID" buttons. The button uses a deep link (wa.link) that opens WhatsApp with our verified support number pre-loaded. You do not need to save any number to your phone book.
+On the [YOLO365 homepage](/), tap any of the gold "Get ID" buttons. The button opens WhatsApp directly with our verified support number pre-loaded. You do not need to save any number to your phone book.
 
 If you are on a desktop, the button opens WhatsApp Web; on mobile it jumps straight into the app.
 

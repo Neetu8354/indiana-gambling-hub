@@ -1,4 +1,4 @@
-export const WHATSAPP_LINK = "https://wa.link/reddyanna_";
+export const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=917372847995&text=I%20WANT%20NEW%20ID!";
 
 type WAOptions = { source?: string };
 
